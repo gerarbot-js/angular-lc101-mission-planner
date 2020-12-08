@@ -2,3 +2,21 @@
     display: flex;
     padding: 10px;
  }
+
+ div {
+     background-color: aqua;
+     font-style: italic;
+     border: solid
+ }
+
+ app-crew{
+     color: red;
+ }
+
+ app-equipment{
+    color: green;
+}
+
+app-experiments{
+    color: white;
+}
