@@ -12,7 +12,7 @@
     </span>
 
     <ng-template #elseBlock>
-      <!-- edit sate of member -->
+      <!-- edit state of member -->
       <input #updatedName (keyup.enter)="save(updatedName.value, member)" value="{{member.name}}"/>
       <button (click)="save(updatedName.value, member)">save</button>
     </ng-template>
