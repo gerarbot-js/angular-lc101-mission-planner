@@ -22,8 +22,16 @@ export class CrewComponent implements OnInit {
   add(memberName: string, isFirst: boolean) {
     let nameArray: string[] = [];
     for (let member of this.crew) {
-      nameArray.push(member.name);
+      nameArray.push(member['name']);
     }
+
+// The push needs bracket notation. The below cause an error but 
+// still run fine (ng serve won't work if you close it and open it
+// up again, though):
+    // for (let member of this.crew) {
+    //   nameArray.push(member.name);
+    // }
+
     // for (let i = 0; i < this.crew.length; i++) {
     //   nameArray.push(this.crew[i].name);
     //   console.log(nameArray);
